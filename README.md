@@ -2,7 +2,7 @@
 
 Memory Game Project assigned at start of Springboard Software Engineering Bootcamp Program. Submitted 1/13/22.
 
-##Assignment
+## Assignment
 
 Project skeleton provided consisting of randomization of colors functions and div creation. I had to make the game functional by creating rules for it.
 
