@@ -88,7 +88,7 @@ function handleCardClick(e) {
         card1.classList.add('match');
         card2.classList.add('match');
         match++;
-        score += 10
+        score += 30
         card1.removeEventListener('click', handleCardClick)
         card2.removeEventListener('click', handleCardClick)
         card1 = null;
@@ -103,9 +103,9 @@ function handleCardClick(e) {
 
     }
   }
-
+  // Finishing in
   if (match === COLORS.length /2){
-    alert(`Game Over! You score was ${(1000 - 10 * time) + score} out of 1000! You finished in ${time} seconds!`);
+    alert(`Game Over! You score was ${(1000 - 25 * time) + score} out of 1000! You finished in ${time} seconds!`);
   }
 
 }
