@@ -64,6 +64,9 @@ function createDivsForColors(colorArray) {
 }
 
 alert('Start Game?');
+let time = 0;
+let timer = setInterval(function(){
+  time++}, 1000);
 // TODO: Implement this function!
 function handleCardClick(e) {
   let currentCard = e.target;
@@ -85,7 +88,7 @@ function handleCardClick(e) {
         card1.classList.add('match');
         card2.classList.add('match');
         match++;
-        score += 20
+        score += 10
         card1.removeEventListener('click', handleCardClick)
         card2.removeEventListener('click', handleCardClick)
         card1 = null;
@@ -102,8 +105,9 @@ function handleCardClick(e) {
   }
 
   if (match === COLORS.length /2){
-    alert(`Game Over! You score was ${score}!`);
+    alert(`Game Over! You score was ${(1000 - 10 * time) + score} out of 1000! You finished in ${time} seconds!`);
   }
+
 }
 // when the DOM loads
 createDivsForColors(shuffledColors);

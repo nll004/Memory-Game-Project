@@ -1,11 +1,11 @@
 #game div {
-  border: 1px solid black;
+  border: 3px solid whitesmoke;
   border-radius: 5px;
   width: 15%;
   height: 200px;
   margin: 10px;
   display: inline-block;
-  background-color: whitesmoke;
+  background-color: rgb(202, 201, 201);
 }
 
 body {
@@ -17,4 +17,5 @@ h1 {
   justify-content: center;
   color: whitesmoke;
   font-size: 3rem;
+  width: 90%;
 }
